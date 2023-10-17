@@ -1,0 +1,13 @@
+# Repositories => These are basically database functions. This is were we Define our database query and data manipulations.
+
+# Controllers => These is where we define the endpoints, note some project structures entirely gets rid of the routes folder
+and uses the controllers instead. The routes and controllers are defined in one place. The controllers serves as an interface between 
+the user and your application.
+
+# Services: This is where you defined your business logic and application specific operations.
+
+NB: Services are dependent on repository, controllers are dependent on services
+
+
+Service repository pattern
+Dependency Injection/ Inversion control
