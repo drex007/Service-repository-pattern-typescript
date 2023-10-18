@@ -1,5 +1,5 @@
 import { controller, httpGet } from 'inversify-express-utils'
-import { UserRequestDto } from '../Database'
+import { UserRequestDto } from 'src/interfaces'
 import { UserService } from '../services/User.service'
 
 // NOTE: Make userService public and not private. This is required for the tests!

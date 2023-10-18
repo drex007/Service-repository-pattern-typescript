@@ -1,16 +1,4 @@
-export interface IUser {
-  id: number
-  username: string
-}
-
-export interface UserRequestDto {
-  username: string
-}
-
-export interface IDatabaseState {
-  users: IUser[]
-}
-
+import { IUser, IDatabaseState } from "./interfaces"
 class Database {
   private state: IDatabaseState = {
     users: [],
