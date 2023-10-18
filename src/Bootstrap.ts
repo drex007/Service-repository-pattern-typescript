@@ -1,12 +1,12 @@
 import 'dotenv/config'
 import 'reflect-metadata'
 
-import { UserRepository } from './User.repository'
-import { UserService } from './User.service'
-import { UserController } from './User.controller'
+import { UserRepository } from './repository/User.repository'
+import { UserService } from './services/User.service'
+import { UserController } from './controllers/User.controller'
 import { Container } from 'inversify'
 import { InversifyExpressServer } from 'inversify-express-utils'
-import './User.controller'
+import './controllers/index'
 
 /* --- Do this as last! --- */
 

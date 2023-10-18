@@ -1,6 +1,6 @@
 import { injectable } from 'inversify'
-import { UserRequestDto } from './Database'
-import { UserRepository } from './User.repository'
+import { UserRequestDto } from '../Database'
+import { UserRepository } from '../repository/User.repository'
 
 // NOTE: Make userRepo public and not private. This is required for the tests!
 @injectable()

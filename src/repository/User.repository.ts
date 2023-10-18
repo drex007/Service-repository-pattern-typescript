@@ -1,5 +1,5 @@
 import { injectable } from 'inversify'
-import Database, { IUser, UserRequestDto } from './Database'
+import Database, { IUser, UserRequestDto } from '../Database'
 
 // NOTE: Make db public instead of private. This is required for the tests.
 @injectable()

@@ -1,6 +1,6 @@
 // @ts-nocheck
-import Database from './Database'
-import { IUser } from './Database'
+import Database from '../Database'
+import { IUser } from '../Database'
 import { UserRepository } from './User.repository'
 
 describe('user repository', () => {
