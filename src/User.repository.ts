@@ -1,6 +1,8 @@
+import { injectable } from 'inversify'
 import Database, { IUser, UserRequestDto } from './Database'
 
 // NOTE: Make db public instead of private. This is required for the tests.
+@injectable()
 export class UserRepository {
   public readonly db = Database
 
@@ -12,5 +14,8 @@ export class UserRepository {
     return this.db.create(userData)
      
 
+  }
+  async getUsers(){
+    return this.db.all()
   }
 }
